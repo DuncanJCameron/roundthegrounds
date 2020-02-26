@@ -18,6 +18,7 @@
   echo "</ul>";
   echo "<p>Results:</p>";
   echo "<ul>";
+  echo "<li><a href='enter/?type=results'>enter</a></li>";
   echo "<li><a href='results/?type=individual'>individual</a></li>";
   echo "<li><a href='results/?type=team'>team</a></li>";
   echo "</ul>";
