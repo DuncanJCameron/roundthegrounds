@@ -1,0 +1,17 @@
+.header{
+  position: absolute;
+  width: 1000px;
+  height: 400px;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -500px;
+}
+.main{
+  position: absolute;
+  width: 750px;
+  left: 50%;
+  margin: 180px 0 0 -375px;
+}
+p{
+  font-family: Open Sans;
+}
