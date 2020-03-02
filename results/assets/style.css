@@ -1,0 +1,27 @@
+.header{
+  position: absolute;
+  width: 1000px;
+  height: 400px;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -500px;
+}
+.main{
+  position: absolute;
+  width: 800px;
+  left: 50%;
+  margin: 180px 0 0 -400px;
+}
+p{
+  font-family: Open Sans;
+}
+td{
+  font-family: Open Sans;
+}
+.heading{
+  font-weight: bold;
+  text-align: center;
+}
+.number{
+  text-align: center;
+}
