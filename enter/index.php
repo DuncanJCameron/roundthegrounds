@@ -32,7 +32,6 @@
     while($row=$result->fetch_assoc()){
       echo "<option value='".$row['name']."'>".$row['name']."</option>";
     }
-    $username=$row["username"];
     echo "</select>";
     echo "<br><br><input type='submit' id='submit' value='Enter'>";
     echo "</p></form>";
