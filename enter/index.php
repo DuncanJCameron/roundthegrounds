@@ -23,7 +23,7 @@
   if($type=="runner"){
     echo "<form action='assets/runner.php' method='post' enctype='multipart/form-data' autocomplete='off'><p>";
     echo "<input type='text' class='field' id='name' name='name' placeholder='Name'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    echo "<input type='text' class='field' id='number' name='number' placeholder='Number'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    echo "<input type='text' class='number' id='number' name='number' placeholder='Number'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     echo "<input type='text' class='field' id='category' name='category' placeholder='Category'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     echo "<select id='club' name='club'>";
     echo "<option value=''>Club</option>";
@@ -46,8 +46,8 @@
   else if($type=="results"){
     echo "<form action='assets/result.php' method='post' enctype='multipart/form-data' autocomplete='off'><p>";
     echo "<input type='text' class='number' id='position' name='position' placeholder='Position'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    echo "<input type='text' class='field' id='number' name='number' placeholder='Number'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    echo "<input type='text' class='number' id='minutes' name='minutes' placeholder='Minutes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    echo "<input type='text' class='number' id='number' name='number' placeholder='Number'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    echo "<input type='text' class='number' id='minutes' name='minutes' placeholder='Minutes'>&nbsp;:&nbsp;";
     echo "<input type='text' class='number' id='seconds' name='seconds' placeholder='Seconds'>";
     echo "<br><br><input type='submit' id='submit' value='Enter'>";
     echo "</p></form>";

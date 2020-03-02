@@ -17,6 +17,7 @@ p{
 }
 .number{
   width: 50px;
+  text-align: center;
 }
 #submit{
   float: right;
