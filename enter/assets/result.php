@@ -11,10 +11,10 @@
   $number=$_POST['number'];
   $minutes=$_POST['minutes'];
   $seconds=$_POST['seconds'];
-  $query="SELECT * FROM 2019_results WHERE number='$number' OR position='$position'";
+  $query="SELECT * FROM 2020_results WHERE number='$number' OR position='$position'";
   $result=$conn->query($query);
   if($result->num_rows==0) {
-    $query="INSERT INTO 2019_results (position,number,minutes,seconds) VALUES ('$position','$number','$minutes','$seconds')";
+    $query="INSERT INTO 2020_results (position,number,minutes,seconds) VALUES ('$position','$number','$minutes','$seconds')";
     $conn->query($query);
     header("Location: /roundthegrounds/enter/?type=results");
     die();
