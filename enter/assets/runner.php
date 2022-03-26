@@ -16,10 +16,10 @@
   else{
     $club=$_POST['club'];
   }
-  $query="SELECT * FROM 2020_runners WHERE number='$number'";
+  $query="SELECT * FROM 2022_runners WHERE number='$number'";
   $result=$conn->query($query);
   if($result->num_rows==0) {
-    $query="INSERT INTO 2020_runners (name,number,category,club) VALUES ('$name','$number','$category','$club')";
+    $query="INSERT INTO 2022_runners (name,number,category,club) VALUES ('$name','$number','$category','$club')";
     $conn->query($query);
     header("Location: /roundthegrounds/enter/?type=runner");
     die();
