@@ -31,12 +31,12 @@
     echo "<td class='heading'>&nbsp;&nbsp;Category&nbsp;&nbsp;</td>";
     echo "<td class='heading'>&nbsp;&nbsp;Club&nbsp;&nbsp;</td>";
     echo "</tr>";
-    $query="SELECT * FROM 2020_results ORDER BY position ASC;";
+    $query="SELECT * FROM 2022_results ORDER BY position ASC;";
     $result=$conn->query($query);
     while($row=$result->fetch_assoc()){
       echo "<tr>";
       echo "<td class='number'>".$row['position']."</td>";
-      $query="SELECT * FROM 2020_runners WHERE number=".$row['number'].";";
+      $query="SELECT * FROM 2022_runners WHERE number=".$row['number'].";";
       $numberquery=$conn->query($query);
       $number=$numberquery->fetch_assoc();
       echo "<td>".$number['name']."</td>";
